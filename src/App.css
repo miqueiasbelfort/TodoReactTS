@@ -1,0 +1,112 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #00927a, #000000);
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    background: #00927a;
+    border-radius: 7px;
+    border: 1px solid #006353;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inputContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.inputContainer input[type="text"] {
+    height: 40px;
+    width: 50%;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+.inputContainer input[type="submit"]{
+    height: 40px;
+    padding: 0 10px;
+    background-color: #006353;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inputContainer input[type="submit"]:hover{
+    background-color: #004c3f;
+}
+
+.taskContainer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tasks {
+    width: 100%;
+    height: 350px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5em;
+    background-color: #00b99a;
+    padding: 10px;
+    border-radius: 7px;
+}
+.task p {
+    max-width: 80%;
+}
+.taskActions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+.btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: .9em;
+    color: #630000;
+    transition: .3s;
+}
+.btn:hover {
+    color: #ff5a5a;
+}
+.btn:first-child{
+    color: #004c3f;
+}
+.btn:first-child:hover {
+    color: #68ffe1;
+}
+
+@media (max-width: 500px) {
+    .content {
+        width: 95%;
+    }
+}
